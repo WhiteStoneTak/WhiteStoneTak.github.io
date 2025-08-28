@@ -1,0 +1,6 @@
+[
+  {"id":"en1","subject":"英語","tags":["vocab","toefl"],"stem":"mitigate の意味は？","choices":["緩和する","拡大する","妨げる","評価する"],"answer":0,"explain":"mitigate = to make less severe."},
+  {"id":"en2","subject":"英語","tags":["reading"],"stem":"段落内の主題文の位置として最も一般的なのは？","choices":["最初","真ん中","最後","どこにもない"],"answer":0,"explain":"多くのアカデミック文では冒頭が主題文。"},
+  {"id":"ma1","subject":"数学","tags":["図形"],"stem":"半径3の円の面積は？","choices":["3π","6π","9π","18π"],"answer":2,"explain":"S=πr²=9π"},
+  {"id":"ph1","subject":"化学","tags":["化学基礎"],"stem":"アボガドロ数に最も近いのは？","choices":["6.02×10^22","6.02×10^23","6.02×10^24","6.02×10^25"],"answer":1,"explain":"標準的な近似は 6.02×10^23"}
+]
