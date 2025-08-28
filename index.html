@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Study Coach – Daily Plan & 3-Quiz</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header>
+    <h1>Study Coach</h1>
+    <p>今日のミニ計画＋3問クイズ＋1 Tips</p>
+  </header>
+
+  <main>
+    <!-- Onboarding -->
+    <section id="onboarding" class="card">
+      <h2>最初に設定</h2>
+      <label>ニックネーム <input id="name" placeholder="例: Taro" /></label>
+      <label>受験タイプ
+        <select id="exam">
+          <option value="common">共通テスト</option>
+          <option value="second">二次</option>
+          <option value="toefl">TOEFL</option>
+          <option value="eiken">英検</option>
+        </select>
+      </label>
+      <label>試験日 <input id="examDate" type="date" /></label>
+      <label>1日の勉強時間
+        <select id="daily">
+          <option value="15">15分</option>
+          <option value="30" selected>30分</option>
+          <option value="60">60分</option>
+        </select>
+      </label>
+      <label>配信時刻（目安）
+        <select id="notifyAt">
+          <option>07:00</option><option selected>20:00</option><option>21:00</option>
+        </select>
+      </label>
+      <button id="saveProfile">保存して始める</button>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="card hidden">
+      <div class="row">
+        <h2 id="greeting"></h2>
+        <button id="reset" class="ghost">リセット</button>
+      </div>
+
+      <div id="plan" class="subcard"></div>
+
+      <form id="quiz" class="subcard"></form>
+
+      <div id="tip" class="subcard"></div>
+
+      <div class="row">
+        <button id="submitQuiz">答えを送信</button>
+        <button id="exportLog" class="ghost">進捗をメール</button>
+      </div>
+
+      <p id="resultMsg" class="muted"></p>
+    </section>
+  </main>
+
+  <footer>
+    <small>© Study Coach</small>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
